@@ -11,6 +11,6 @@ bash <(curl -s https://raw.githubusercontent.com/zAlwaysTheSun/speedtest-cli-fre
 ```
 Vous aurez besoin du package bash, sudo et curl.
 
-## Je recois une erreur de clé GPG, comment faire ?
-Il suffit d'importer la clé GPG dans le repo !
+## Je recois une erreur de clé PGP, comment faire ?
+Il suffit d'importer la clé PGP dans le repo !
 
