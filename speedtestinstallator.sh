@@ -212,8 +212,9 @@ main ()
   echo "Effectué."
 
   echo
-  echo "Le repo est désormais setup. Vous pouvez lancer désormais la commande :"
-  echo "sudo apt-get install speedtest"
+  echo "Le repo est désormais setup. Installation de speedtest pour toi !"
 }
+
+sudo apt-get install speedtest
 
 main
