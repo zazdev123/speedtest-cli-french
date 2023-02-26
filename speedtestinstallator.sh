@@ -16,7 +16,7 @@ gpg_check ()
   if command -v gpg > /dev/null; then
     echo "gpg détecté..."
   else
-    echo "Installation de gnupg pour la vérification GPG..."
+    echo "Installation de gnupg pour la vérification PGP..."
     apt-get install -y gnupg
     if [ "$?" -ne "0" ]; then
       echo "Nous avons détecté un problème lors de l'installation, il est donc impossible de poursuivre."
@@ -183,7 +183,7 @@ main ()
     echo "Effectué."
   fi
 
-  echo -n "Importation de la clé GPG de packagecloud..."
+  echo -n "Importation de la clé PGP de packagecloud..."
   # import the gpg key
   curl -fsSL "${gpg_key_url}" | gpg --dearmor > ${gpg_keyring_path}
   # grant 644 permisions to gpg keyring path
@@ -200,9 +200,9 @@ main ()
     if ! ls -1qA $apt_keyrings_dir | grep -q .;then
       rm -r $apt_keyrings_dir
     fi
-    echo "Clé GPG importé vers ${gpg_key_path_old}"
+    echo "Clé PGP importé vers ${gpg_key_path_old}"
   else
-    echo "Clé GPG importé vers ${gpg_keyring_path}"
+    echo "Clé PGP importé vers ${gpg_keyring_path}"
   fi
   echo "Effectué."
 
@@ -213,8 +213,7 @@ main ()
 
   echo
   echo "Le repo est désormais setup. Installation de speedtest pour toi !"
+  sudo apt-get install speedtest
 }
-
-sudo apt-get install speedtest
 
 main
