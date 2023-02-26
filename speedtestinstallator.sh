@@ -212,8 +212,11 @@ main ()
   echo "Effectué."
 
   echo
-  echo "Le repo est désormais setup. Installation de speedtest pour toi !"
+  echo "Le repo est désormais installé sur ton serveur. Installation de speedtest..."
   sudo apt-get install speedtest
+  
+  #apt-get end
+  echo "Speedtest installé. Pour lancer speedtest, fais la commande  speedtest  . Pour chosisir un serveur spécifique aux alentours, fais  speedtest --servers  , puis  speedtest -s<ID>  ."
 }
 
 main
