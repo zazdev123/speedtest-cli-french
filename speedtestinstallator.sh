@@ -217,6 +217,8 @@ main ()
   
   #apt-get end
   echo "Speedtest installé. Pour lancer speedtest, fais la commande  speedtest  . Pour chosisir un serveur spécifique aux alentours, fais  speedtest --servers  , puis  speedtest -s<ID>  ."
+  echo "En attendant, je te le lance."
+  speedtest
 }
 
 main
