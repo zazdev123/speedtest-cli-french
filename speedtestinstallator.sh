@@ -12,9 +12,9 @@ unknown_os ()
 
 gpg_check ()
 {
-  echo "Détection de gpg..."
+  echo "Détection de PGP..."
   if command -v gpg > /dev/null; then
-    echo "gpg détecté..."
+    echo "PGP détecté..."
   else
     echo "Installation de gnupg pour la vérification PGP..."
     apt-get install -y gnupg
