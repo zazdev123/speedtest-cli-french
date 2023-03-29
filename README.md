@@ -11,6 +11,3 @@ bash <(curl -s https://raw.githubusercontent.com/zAlwaysTheSun/speedtest-cli-fre
 ```
 Vous aurez besoin du package bash et curl. Le script est totalement automatisé et installera speedtest tout seul.
 
-## Je recois une erreur de clé PGP, comment faire ?
-Il suffit d'importer la clé PGP dans le repo !
-
